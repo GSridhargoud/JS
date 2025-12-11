@@ -1,0 +1,1 @@
+using GRService as service from '../../srv/gr-service';
