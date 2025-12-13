@@ -1,0 +1,29 @@
+<mvc:View controllerName="pocapm.controller.gr_header"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="gr_header" title="{i18n>title}">
+    <Table items = "{ path : '/gr_header'}">
+    <columns>
+    <Column ><Text text="GR ID"></Text></Column>
+    <Column ><Text text="GR Number"></Text></Column>
+    <Column ><Text text="PO ID"></Text></Column>
+    <Column ><Text text="GR Date"></Text></Column>
+    <Column ><Text text="Storage Location"></Text></Column>
+    <Column ><Text text="Status"></Text></Column>
+    <Column ><Text text="Received Quantity Status"></Text></Column>    
+    </columns>
+
+    <ColumnListItem >
+    <cells>
+    <Text text="{gr_id}"></Text>
+    <Text text="{gr_number}"></Text>
+    <Text text="{gr_po}"></Text>
+    <Text text="{gr_date}"></Text>
+    <Text text="{gr_stor_loc}"></Text>
+    <Text text="{gr_status}"></Text>
+    <Text text="{gr_item_receivedquan}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+    </Page>
+</mvc:View>

@@ -1,0 +1,33 @@
+<mvc:View controllerName="pocapm.controller.vendormaster"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="vendormaster" title="{i18n>title}">
+    <Table items="{ path : '/vendormaster'}">
+    <columns>
+    <Column ><Text text="Vendor ID"></Text></Column>
+    <Column ><Text text="Vendor Code"></Text></Column>
+    <Column ><Text text="First Name"></Text></Column>
+    <Column ><Text text="Last Name"></Text></Column>
+    <Column ><Text text="GST Number"></Text></Column>
+    <Column ><Text text="Contact Person"></Text></Column>
+    <Column ><Text text="Email"></Text></Column>
+    <Column ><Text text="Payment Terms"></Text></Column>
+    <Column ><Text text="Active Status"></Text></Column>
+    </columns>
+
+    <ColumnListItem >
+    <cells>
+    <Text text="{vm_id}"></Text>
+    <Text text="{vm_code}"></Text>
+    <Text text="{vm_firstname}"></Text>
+    <Text text="{vm_lastname}"></Text>
+    <Text text="{vm_gstno}"></Text>
+    <Text text="{vm_person}"></Text>
+    <Text text="{vm_email}"></Text>
+    <Text text="{vm_payments}"></Text>
+    <Text text="{is_Active}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+    </Page>
+</mvc:View>

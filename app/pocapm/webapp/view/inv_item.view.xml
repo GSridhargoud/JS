@@ -1,0 +1,41 @@
+<mvc:View controllerName="pocapm.controller.inv_item"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="inv_itme" title="{i18n>title}">
+    <Table items="{path:'/inv_item'}">
+    <columns>
+    <Column ><Text text="Invoice Item ID"></Text></Column>
+    <Column ><Text text="Invoice Header ID"></Text></Column>
+    <Column ><Text text="PO ID"></Text></Column>
+    <Column ><Text text="PO Line Item"></Text></Column>
+    <Column ><Text text="GR Item ID"></Text></Column>
+    <Column ><Text text="Invoice Quantity"></Text></Column>
+    <Column ><Text text="Unit of Measure"></Text></Column>
+    <Column ><Text text="Net Price"></Text></Column>
+    <Column ><Text text="Discount"></Text></Column>
+    <Column ><Text text="GST Percentage"></Text></Column>
+    <Column ><Text text="Net Amount"></Text></Column>
+    <Column ><Text text="Tax Amount"></Text></Column>
+    <Column ><Text text="Total Amount"></Text></Column>
+    </columns>
+
+    <ColumnListItem >
+    <cells>
+    <Text text="{inv_item_id}"></Text>
+    <Text text="{inv_id}"></Text>
+    <Text text="{inv_item_po_id}"></Text>
+    <Text text="{inv_item_lineitem}"></Text>
+    <Text text="{inv_item_refgr}"></Text>
+    <Text text="{inv_item_quaninv_order_quan}"></Text>
+    <Text text="{inv_item_uom_uom}"></Text>
+    <Text text="{inv_item_netprice}"></Text>
+    <Text text="{inv_item_discount}"></Text>
+    <Text text="{inv_item_gst}"></Text>
+    <Text text="{inv_item_netamt}"></Text>
+    <Text text="{inv_item_taxamt}"></Text>
+    <Text text="{inv_item_totalamt}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+    </Page>
+</mvc:View>

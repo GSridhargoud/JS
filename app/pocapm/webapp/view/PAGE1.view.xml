@@ -1,0 +1,20 @@
+<mvc:View controllerName="pocapm.controller.PAGE1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="firstpage" title="{i18n>title}">
+    <VBox gap="30px">
+    <HBox gap="30px">
+    <GenericTile press="Vendor" header="Vendor data"></GenericTile>
+    <GenericTile press="Material" header="Material data"></GenericTile>
+    <GenericTile press="GoodsHeader" header="Goods Receipt Header"></GenericTile></HBox>
+    <HBox gap="30px">
+    <GenericTile press="GoodsItems" header="Goods Receipt Item"></GenericTile>
+    <GenericTile press="InvHeader" header="Invoice Header"></GenericTile>
+    <GenericTile press="InvItems" header="Invoice Item"></GenericTile></HBox>
+     <HBox gap="30px">
+    <GenericTile press="POHeader" header="Purchase Order Header"></GenericTile>
+    <GenericTile press="POItems" header="Purchase Order Items"></GenericTile>
+    <GenericTile press="Audit" header="Audit"></GenericTile></HBox>
+    </VBox>
+    </Page>
+</mvc:View>

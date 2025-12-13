@@ -1,0 +1,46 @@
+<mvc:View controllerName="pocapm.controller.poitem"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="poitem" title="{i18n>title}">
+    <Table items="{path : '/poitem'}">
+    <columns>
+    <Column ><Text text="PO ID"></Text></Column>
+    <Column ><Text text="Line Item Number"></Text></Column>
+    <Column ><Text text="Material ID"></Text></Column>
+    <Column ><Text text="Material Code"></Text></Column>
+    <Column ><Text text="Material Description"></Text></Column>
+    <Column ><Text text="Quantity"></Text></Column>
+    <Column ><Text text="Unit of Measure"></Text></Column>
+    <Column ><Text text="Net Price"></Text></Column>
+    <Column ><Text text="Net Price"></Text></Column>
+    <Column ><Text text="GST Percentage"></Text></Column>
+    <Column ><Text text="Net Price Value"></Text></Column>
+    <Column ><Text text="Net Price Value 2"></Text></Column>
+    <Column ><Text text="Received Quantity"></Text></Column>
+    <Column ><Text text="Open Quantity"></Text></Column>
+    <Column ><Text text="Item Status"></Text></Column>
+    </columns>
+
+    <ColumnListItem >
+    <cells>
+    <Text text="{po_id}"></Text>
+    <Text text="{po_lineitem_number}"></Text>
+    <Text text="{po_item_material_id}"></Text>
+    <Text text="{po_item_materials}"></Text>
+    <Text text="{po_item_materialsdesc}"></Text>
+    <Text text="{po_item_quan_order_quan}"></Text>
+    <Text text="{po_item_uom_uom}"></Text>
+    <Text text="{po_item_netprice}"></Text>
+    <Text text="{po_item_discount}"></Text>
+    <Text text="{po_item_gst}"></Text>
+    <Text text="{po_item_netprice_value}"></Text>
+    <Text text="{po_item_netprice_value2}"></Text>
+    <Text text="{po_item_received_quan}"></Text>
+    <Text text="{po_item_open_quan}"></Text>
+    <Text text="{po_item_status}"></Text>
+    </cells>
+    </ColumnListItem>
+    
+    </Table>
+    </Page>
+</mvc:View>

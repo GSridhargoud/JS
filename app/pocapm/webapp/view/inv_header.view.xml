@@ -1,0 +1,46 @@
+<mvc:View controllerName="pocapm.controller.inv_header"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="inv_header" title="{i18n>title}">
+    <Table items="{ path :'/inv_header'}">
+    <columns >
+    <Column  ><Text  text="Invoice Header ID"></Text></Column>
+    <Column ><Text text="Invoice Number"></Text></Column >
+    <Column ><Text text="Vendor ID"></Text></Column >
+    <Column ><Text text="Vendor Code"></Text></Column >
+    <Column ><Text text="Reference PO Number"></Text></Column >
+    <Column ><Text text="GR Number"></Text></Column >
+    <Column ><Text text="Invoice Date"></Text></Column >
+    <Column ><Text text="Posting Date"></Text></Column >
+    <Column ><Text text="Currency"></Text></Column >
+   <Column > <Text text="Total Amount Before Tax"></Text></Column >
+   <Column > <Text text="Status"></Text></Column >
+   <Column > <Text text="Tax Amount"></Text></Column >
+    <Column ><Text text="Total Amount"></Text></Column >
+   <Column > <Text text="Reason for Rejection"></Text></Column >
+   <Column > <Text text="Posting Details"></Text></Column >
+    </columns>
+    
+    <ColumnListItem >
+    <cells >
+    <Text text="{inv_header_id}" ></Text>
+    <Text text="{inv_header_invnumber}"></Text>
+    <Text text="{inv_header_vendor_id}"></Text>
+    <Text text="{inv_header_vendor}"></Text>
+    <Text text="{inv_header_refpo}"></Text>
+    <Text text="{inv_header_gr}"></Text>
+    <Text text="{inv_header_date}"></Text>
+    <Text text="{inv_header_postdate}"></Text>
+    <Text text="{inv_header_cuky_cuky}"></Text>
+    <Text text="{inv_header_totalamt_before}"></Text>
+    <Text text="{inv_header_status}"></Text>
+    <Text text="{inv_header_taxamt}"></Text>
+    <Text text="{inv_header_total_amount}"></Text>
+    <Text text="{inv_header_reason_rejection}"></Text>
+    <Text text="{inv_header_aspect_postedat}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+
+    </Page>
+</mvc:View>

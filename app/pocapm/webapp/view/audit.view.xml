@@ -1,0 +1,23 @@
+<mvc:View controllerName="pocapm.controller.audit"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="audit" title="{i18n>title}">
+    <Table items="{ path : '/audit'}">
+    <columns>
+    <Column ><Text text="PO ID"></Text></Column>
+    <Column ><Text text="Error Status"></Text></Column>
+    <Column ><Text text="Audit Status"></Text></Column>
+    <Column ><Text text="Audit Log"></Text></Column>
+    </columns>
+
+    <ColumnListItem >
+    <cells>
+    <Text text="{error_po}"></Text>
+    <Text text="{error_status}"></Text>
+    <Text text="{audit_status}"></Text>
+    <Text text="{audit_log_auditby}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+    </Page>
+</mvc:View>

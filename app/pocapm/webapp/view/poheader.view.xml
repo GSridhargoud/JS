@@ -1,0 +1,39 @@
+<mvc:View controllerName="pocapm.controller.poheader"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="poheader" title="{i18n>title}">
+    <Table items="{path:'/poheader'}">
+    <columns>
+    <Column ><Text text="PO ID"></Text></Column>
+    <Column ><Text text="PO Number"></Text></Column>
+    <Column ><Text text="Vendor ID"></Text></Column>
+    <Column ><Text text="Vendor Code"></Text></Column>
+    <Column ><Text text="Company Code"></Text></Column>
+    <Column ><Text text="Purchasing Org"></Text></Column>
+    <Column ><Text text="Currency"></Text></Column>
+    <Column ><Text text="Document Date"></Text></Column>
+    <Column ><Text text="Delivery Date"></Text></Column>
+    <Column ><Text text="Total Value"></Text></Column>
+    <Column ><Text text="Status"></Text></Column>
+    <Column ><Text text="Remarks"></Text></Column>
+    </columns>
+    
+    <ColumnListItem >
+    <cells>
+    <Text text="{po_id}"></Text>
+    <Text text="{po_number}"></Text>
+    <Text text="{po_vm_id}"></Text>
+    <Text text="{vendor}"></Text>
+    <Text text="{po_coco}"></Text>
+    <Text text="{po_org}"></Text>
+    <Text text="{po_curr_cuky}"></Text>
+    <Text text="{po_doc_date}"></Text>
+    <Text text="{po_delivery_date}"></Text>
+    <Text text="{po_total_value}"></Text>
+    <Text text="{po_status}"></Text>
+    <Text text="{po_remarks}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+    </Page>
+</mvc:View>

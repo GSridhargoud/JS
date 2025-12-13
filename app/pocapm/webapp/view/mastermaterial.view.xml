@@ -1,0 +1,31 @@
+<mvc:View controllerName="pocapm.controller.mastermaterial"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="mastermaterial" title="{i18n>title}">
+    <Table items="{ path : '/mastermaterial'}">
+    <columns>
+    <Column ><Text text="Material ID"></Text></Column>
+    <Column ><Text text="Material Code"></Text></Column>
+    <Column ><Text text="Material Description"></Text></Column>
+    <Column ><Text text="Material Type"></Text></Column>
+    <Column ><Text text="Standard Price"></Text></Column>
+    <Column ><Text text="Unit of Measure"></Text></Column>
+    <Column ><Text text="GST Number"></Text></Column>
+    <Column ><Text text="Active Status"></Text></Column>
+    </columns>
+
+    <ColumnListItem >
+    <cells>
+    <Text text="{mm_id}"></Text>
+    <Text text="{mm_code}"></Text>
+    <Text text="{mm_desc}"></Text>
+    <Text text="{mm_types_raw_material}"></Text>
+    <Text text="{mm_stdprice}"></Text>
+    <Text text="{mm_uom_uom}"></Text>
+    <Text text="{mm_gstno}"></Text>
+    <Text text="{is_Active}"></Text>
+    </cells>
+    </ColumnListItem>
+    </Table>
+    </Page>
+</mvc:View>

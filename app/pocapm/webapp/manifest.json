@@ -1,0 +1,195 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "pocapm",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.20.0",
+      "toolsId": "a1a30300-1c99-4235-b9a7-1a128849dcf7"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/my/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.143.2",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "pocapm.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "pocapm.view",
+        "async": true,
+        "viewPath": "pocapm.view"
+      },
+      "routes": [
+        {
+          "name": "RoutePAGE1",
+          "pattern": ":?query:",
+          "target": [
+            "TargetPAGE1"
+          ]
+        },{
+          "name": "Vendor",
+          "pattern": "Vendor",
+          "target": [
+            "Vendor"
+          ]
+        },{
+          "name": "material",
+          "pattern": "material",
+          "target": [
+            "material"
+          ]
+        },
+        {
+          "name":"GoodsHeader",
+          "pattern": "GoodsHeader",
+          "target":["GoodsHeader"]
+        },
+        {
+          "name":"GoodsItems",
+          "pattern": "GoodsItems",
+          "target":["GoodsItems"]
+        },
+        {
+          "name":"InvHeader",
+          "pattern": "InvHeader",
+          "target":["InvHeader"]
+        },
+        {
+          "name":"InvItems",
+          "pattern": "InvItems",
+          "target":["InvItems"]
+        },
+        {
+          "name": "POHeader",
+          "pattern": "POHeader",
+          "target": [
+            "POHeader"
+          ]
+        },{
+          "name": "POItems",
+          "pattern": "POItems",
+          "target": [
+            "POItems"
+          ]
+        },{
+          "name": "Audit",
+          "pattern": "Audit",
+          "target": [
+            "Audit"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetPAGE1": {
+          "id": "PAGE1",
+          "name": "PAGE1"
+        },"Vendor": {
+          "id": "Vendor",
+          "name": "vendormaster"
+        },"GoodsHeader": {
+          "id": "GoodsHeader",
+          "name": "gr_header"
+        },"GoodsItems": {
+          "id": "GoodsItems",
+          "name": "gr_item"
+        },"material": {
+          "id": "material",
+          "name": "mastermaterial"
+        },"InvHeader": {
+          "id": "InvHeader",
+          "name": "inv_header"
+        },"InvItems": {
+          "id": "InvItems",
+          "name": "inv_item"
+        },"POHeader": {
+          "id": "POHeader",
+          "name": "poheader"
+        },"POItems": {
+          "id": "POItems",
+          "name": "poitem"
+        },"Audit": {
+          "id": "Audit",
+          "name": "audit"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "pocapm.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}
