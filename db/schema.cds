@@ -137,7 +137,7 @@ entity vendormaster : primary {
 
   @title : 'Email'
   @Common.Label : 'Email'
-  @assert.format : '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'
+  // @assert.format : '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'
   vm_email : String(50);
 
   @title : 'Payment Terms'

@@ -1,0 +1,24 @@
+####
+GET http://localhost:4004/odata/v4/my/vendormaster
+
+
+####
+POST http://localhost:4004/odata/v4/my/vendormaster
+Content-Type: application/json
+
+{
+    "vm_id": "11111111-1111-4111-8111-111111111111",
+      "vm_code": "VE01",
+      "vm_firstname": "John",
+      "vm_lastname": "Doe",
+      "vm_addresses_vm_street": "Lake View Road 12",
+      "vm_addresses_vm_city": "Jaipur",
+      "vm_addresses_vm_state": "Rajasthan",
+      "vm_addresses_vm_country": "India",
+      "vm_addresses_vm_postal": "302001",
+      "vm_gstno": "08ABCDE1234F1Z5",
+      "vm_person": "rahul",
+      "vm_email": "contact@vendor1.com",
+      "vm_payments": "30 days",
+      "is_Active": "active"
+}
